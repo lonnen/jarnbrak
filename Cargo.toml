@@ -1,0 +1,7 @@
+[package]
+name = "jarnbrak"
+version = "0.1.0"
+authors = ["lonnen <chris.lonnen@gmail.com>"]
+edition = "2018"
+
+[dependencies]
