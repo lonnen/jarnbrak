@@ -1,8 +1,9 @@
 [package]
 name = "jarnbrak"
-version = "0.1.0"
+version = "0.0.1"
 authors = ["lonnen <chris.lonnen@gmail.com>"]
 edition = "2018"
 
 [dependencies]
 rand = "0.6.5"
+futures-preview = "0.3.0-alpha.13"
