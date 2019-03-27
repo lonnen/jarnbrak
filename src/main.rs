@@ -4,7 +4,7 @@ use std::net::TcpListener;
 
 fn main() {
     // note: we are doing nothing to handle potential failures here
-    let listener = TcpListener::bind("127.0.0.1:2222").unwrap();
+    let listener = TcpListener::bind("127.0.0.1:8080").unwrap();
 
     for stream in listener.incoming() {
         handle_connection(stream.unwrap());
