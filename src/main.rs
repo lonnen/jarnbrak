@@ -1,6 +1,10 @@
+extern crate rand;
+
 use std::io::prelude::*;
-use std::net::TcpStream;
 use std::net::TcpListener;
+use std::net::TcpStream;
+
+use rand::random;
 
 fn main() {
     // note: we are doing nothing to handle potential failures here
@@ -15,8 +19,10 @@ fn handle_connection(mut stream: TcpStream) {
     stream.write(b"HTTP/1.1 200 OK\r\n").unwrap();
 
     loop {
-        let (header, value) = ('1', '2');
-        let response = format!("X-{}: {}\r\n", header, value);
+        let response = format!("X-{}: {}\r\n",
+            random::<u8>(),
+            random::<u8>()
+        );
         stream.write(response.as_bytes()).unwrap();
         stream.flush().unwrap();
         println!("response: {}", response);
