@@ -7,3 +7,4 @@ license = "Apache-2.0"
 
 [dependencies]
 rand = "0.6.5"
+structopt = "0.2.10"
