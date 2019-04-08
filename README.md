@@ -4,7 +4,7 @@ It implements an HTTP server that holds open HTTP connections by slowly sending 
 
 This was written as a learning exercise in Rust and should not be used in a production setting.
 
-To try it yourself, build and run using Cargo. The server will attempt to bind `127.0.0.1:8080` and allocate a threadpool of 4 threads.
+To try it yourself, build and run using Cargo. When prompted with an `-h` or `--help` flag a usage statement will print.
 
 ### Reference Materials
 * [Wellon's Endlessh writeup](https://nullprogram.com/blog/2019/03/22/)
